@@ -69,7 +69,7 @@ function LandingPage() {
   return (
     <main className={classes.fullWidth}>
       <div className={classes.divb} style={{position: 'fixed'}}>
-          <Link to="/MakeObituary">
+          <Link to="/LoginPage">
           <Button color="primary" >
           Host A Memorial
         </Button>
