@@ -9,7 +9,7 @@ import MainContent from "../components/MainContent";
 //<<<<<<< Updated upstream
 import {Link } from "react-router-dom";
 import { Button,List, ListItemText } from '@material-ui/core';
-//=======
+///=======
 import MainContentDonate from "../components/MainContentDonate";
 //>>>>>>> Stashed changes
 
