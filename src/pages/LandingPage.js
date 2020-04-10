@@ -7,7 +7,7 @@ import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainContent from "../components/MainContent";
 import {Link } from "react-router-dom";
-import { Button } from '@material-ui/core';
+import { Button,List, ListItemText } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -68,9 +68,9 @@ function LandingPage() {
 
   return (
     <main className={classes.fullWidth}>
-      <div className={classes.divb}>
+      <div className={classes.divb} style={{position: 'fixed'}}>
           <Link to="/MakeObituary">
-          <Button color="primary">
+          <Button color="primary" >
           Host A Memorial
         </Button>
         </Link>
@@ -86,9 +86,7 @@ function LandingPage() {
         </div>
         <div className={classes.content}>
           <Typography paragraph color="textSecondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
-            pulvinar lorem felis nec erat
+          Celebrate the life of those who have passed with your family and friends.
           </Typography>
         </div>
       </div>
@@ -98,24 +96,22 @@ function LandingPage() {
         </div>
         <div className={classes.content}>
           <Typography paragraph color="textSecondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
-            pulvinar lorem felis nec erat
+          Celebrate life, alleviate grief, and bring closure to your family through
+           our virtual memorial services.
+           </Typography>
+           <Typography paragraph color="textSecondary">           En Memoir utilizes high speed video conferencing software
+            and personalized curated content to help you and the loved ones
+            of the deceased hold a meaningful service, wherever you are.
           </Typography>
         </div>
       </div>
       <div className={classes.fullWidthInnerLight}>
         <div className={classes.divb}>
           <Typography paragraph color="textSecondary">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
-            pulvinar lorem felis nec erat
+          The Virtual Memorial Room lets you set up a virtual obituary
+           of your loved one and it includes interactive features like:
           </Typography>
-          <ul color="textSecondary">
-            <li>Coffee</li>
-           <li>Tea</li>
-          <li>Milk</li>
-        </ul> 
+
         </div>
       </div>
       <div className={classes.fullWidthInnerMid}>
