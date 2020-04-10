@@ -8,6 +8,7 @@ import LandingPage from "./pages/LandingPage";
 import MakeObituary from "./pages/MakeObituary";
 import CreateInvite from "./pages/CreateInvite";
 import LoginPage from "./pages/LoginPage";
+import LoginPageRSVP from "./pages/LoginPageRSVP";
 
 
 
@@ -18,6 +19,9 @@ ReactDOM.render(
     <Route exact path="/" component={LandingPage} />
     <Route path="/LoginPage" component={LoginPage} />
     <Route path="/CreateInvite" component={CreateInvite} />
+    <Route path="/MakeObituary" component={MakeObituary} />
+    <Route path="/LoginPageRSVP" component={LoginPageRSVP} />
+
   </Switch>
   </BrowserRouter>,
   rootElement

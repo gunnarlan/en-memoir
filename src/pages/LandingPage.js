@@ -74,7 +74,7 @@ function LandingPage() {
           Host A Memorial
         </Button>
         </Link>
-      <Button color="primary">
+      <Button color="primary" href="./LoginPageRSVP">
           Join A Memorial
         </Button>
       </div>
