@@ -5,6 +5,7 @@ import SideMenu from '../components/SideMenu';
 import Footer from '../components/Footer';
 import MainContent from '../components/MainContent';
 import MainContentTemplate from '../components/MainContentTemplate';
+import LayoutTextFields from '../components/LayoutTextFields';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -18,7 +19,7 @@ function CreateInvite() {
     return (
         <div className={classes.root}>
             <SideMenu name="Create Invite" />
-            <MainContentTemplate title="Create Invite"/>
+            <MainContentTemplate title="Create Invite" content={<LayoutTextFields />}/>
         </div>
     );
 }
