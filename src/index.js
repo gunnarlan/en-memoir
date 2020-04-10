@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import MakeObituary from "./pages/MakeObituary";
+import CreateInvite from "./pages/CreateInvite";
 
 
 const rootElement = document.getElementById("root");
@@ -14,6 +15,7 @@ ReactDOM.render(
    <Switch>
     <Route exact path="/" component={LandingPage} />
     <Route path="/MakeObituary" component={MakeObituary} />
+    <Route path="/CreateInvite" component={CreateInvite} />
   </Switch>
   </BrowserRouter>,
   rootElement

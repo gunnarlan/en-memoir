@@ -1,9 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 import { Avatar } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import LayoutTextFields from "../components/LayoutTextFields";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
@@ -24,6 +25,14 @@ const useStyles = makeStyles((theme) => ({
     margin: 30,
     width: 160,
     height: 160,
+  },
+  buttons: {
+    margin: theme.spacing(10),
+    display: "flex",
+    justifyContent:"flex-end"
+  },
+  button: {
+    margin: theme.spacing(1)
   }
 }));
 
@@ -45,6 +54,14 @@ function MainContent() {
           felis nec erat
         </Typography>
         <LayoutTextFields />
+        <div className={classes.buttons}>
+          <Button variant="outlined" color="backgroundDefault" className={classes.button}>
+            Reset
+          </Button>
+          <Button variant="contained" color="backgroundDefault" className={classes.button} href="/CreateInvite">
+            Next
+          </Button>
+        </div>
       </div>
     </main>
   );
