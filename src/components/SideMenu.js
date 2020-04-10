@@ -7,8 +7,6 @@ import ListItemText from '@material-ui/core/ListItemText';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ExitToApp from '@material-ui/icons/ExitToApp';
 import { makeStyles } from '@material-ui/core/styles';
-import { Avatar } from '@material-ui/core';
-import { Grid } from '@material-ui/core';
 
 const drawerWidth = 300;
 
@@ -20,12 +18,7 @@ const useStyles = makeStyles((theme) => ({
   drawerPaper: {
     width: drawerWidth,
     backgroundColor: theme.palette.background.default,
-  },
-  bigAvatar: {
-    margin: 30,
-    width: 100,
-    height: 100,
-  },
+  }
 }));
 
 function SideMenu() {
@@ -41,12 +34,7 @@ function SideMenu() {
                 paper: classes.drawerPaper,
             }}
         >
-            <Grid container justify='center' alignItems='center'>
-                {/* <Avatar
-                    src='https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg'
-                    className={classes.bigAvatar}
-                /> */}
-            </Grid>
+        
             <List>
                 {['Profile', 'Sign Out'].map((text, index) => (
                     <ListItem button key={text}>

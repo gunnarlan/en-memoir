@@ -11,16 +11,15 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function Home() {
+function MakeObituary() {
     const classes = useStyles();
     
     return (
         <div className={classes.root}>
             <SideMenu />
             <MainContent />
-            <Footer />
         </div>
-    );;
+    );
 }
 
-export default Home;
+export default MakeObituary;

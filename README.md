@@ -1,3 +1,6 @@
+# En-memoir
+❤️ Welcome to the source code for *En-memoir*! ❤️ We're a team participating in The Global Hackathon April 2020, as a response to the COVID-19 global crisis. 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
