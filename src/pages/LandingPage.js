@@ -6,8 +6,12 @@ import TopMenu from "../components/TopMenu";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainContent from "../components/MainContent";
+//<<<<<<< Updated upstream
 import {Link } from "react-router-dom";
 import { Button,List, ListItemText } from '@material-ui/core';
+//=======
+import MainContentDonate from "../components/MainContentDonate";
+//>>>>>>> Stashed changes
 
 const useStyles = makeStyles((theme) => ({
   root: {

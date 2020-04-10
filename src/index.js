@@ -9,6 +9,7 @@ import MakeObituary from "./pages/MakeObituary";
 import CreateInvite from "./pages/CreateInvite";
 import LoginPage from "./pages/LoginPage";
 import LoginPageRSVP from "./pages/LoginPageRSVP";
+import Donate from "./pages/Donate";
 
 
 
@@ -21,6 +22,7 @@ ReactDOM.render(
     <Route path="/CreateInvite" component={CreateInvite} />
     <Route path="/MakeObituary" component={MakeObituary} />
     <Route path="/LoginPageRSVP" component={LoginPageRSVP} />
+    <Route path="/Donate" component={Donate} />
 
   </Switch>
   </BrowserRouter>,
