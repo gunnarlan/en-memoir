@@ -6,6 +6,7 @@ import TopMenu from "../components/TopMenu";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainContent from "../components/MainContent";
+import {Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -97,6 +98,10 @@ function LandingPage() {
             maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
             pulvinar lorem felis nec erat
           </Typography>
+          <Link to="/MakeObituary"><button>
+          Get Started
+        </button>
+        </Link>
         </div>
       </div>
       <div className={classes.fullWidthInnerMid}>
