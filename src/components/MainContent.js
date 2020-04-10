@@ -46,6 +46,9 @@ function MainContent() {
         </Typography>
         <LayoutTextFields />
       </div>
+      <button>
+        Submit
+      </button>
     </main>
   );
 }
