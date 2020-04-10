@@ -29,8 +29,9 @@ jobs:
         popd
 
     - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v1
+      uses: azure/webapps-deploy@v2
       with:
         app-name: 'enmemoir'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_4c4cba41ff0341d991fb131e99184f0d }}
+        package: .
