@@ -89,7 +89,7 @@ export default function MainContentLogin() {
               variant="contained"
               color="primary"
               className={classes.submit}
-              href="/MakeObituary"
+              href="/RSVPPage"
             >
               Login
             </Button>
