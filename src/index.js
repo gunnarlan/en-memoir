@@ -7,6 +7,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import MakeObituary from "./pages/MakeObituary";
 import CreateInvite from "./pages/CreateInvite";
+import LoginPage from "./pages/LoginPage";
+
 
 
 const rootElement = document.getElementById("root");
@@ -14,7 +16,7 @@ ReactDOM.render(
   <BrowserRouter>
    <Switch>
     <Route exact path="/" component={LandingPage} />
-    <Route path="/MakeObituary" component={MakeObituary} />
+    <Route path="/LoginPage" component={LoginPage} />
     <Route path="/CreateInvite" component={CreateInvite} />
   </Switch>
   </BrowserRouter>,
