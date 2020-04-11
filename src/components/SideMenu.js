@@ -36,10 +36,10 @@ function SideMenu() {
         >
         
             <List>
-                {['Profile', 'Sign Out'].map((text, index) => (
+                {['Profile', 'Songs', 'Sign Out'].map((text, index) => (
                     <ListItem button key={text}>
                         <ListItemIcon>
-                            {index % 2 === 0 ? <AccountCircle /> : <ExitToApp />}
+                            {index % 3 === 2 ? <ExitToApp /> : <AccountCircle />}
                         </ListItemIcon>
                         <ListItemText primary={text} />
                     </ListItem>
