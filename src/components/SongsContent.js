@@ -1,11 +1,11 @@
+import hash from "./hash";
+import Player from "./Player";
+import logo from "./logo.svg";
+import { authEndpoint, clientId, redirectUri, scopes } from "../config";
 import React, { Component } from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import * as $ from "jquery";
-import { authEndpoint, clientId, redirectUri, scopes } from "../config";
-import hash from "./hash";
-import Player from "./Player";
-import logo from "./logo.svg";
 
 /*
 const useStyles = makeStyles((theme) => ({

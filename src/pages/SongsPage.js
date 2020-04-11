@@ -3,10 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Container, Typography } from "@material-ui/core";
 import { spacing } from "@material-ui/system";
 import TopMenu from "../components/TopMenu";
-import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import SongsContent from "../components/SongsContent";
 import {Link } from "react-router-dom";
+import SideMenuSongs from "../components/SideMenuSongs";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,7 +19,7 @@ function SongsPage() {
     
     return (
         <div className={classes.root}>
-            <SideMenu />
+            <SideMenuSongs />
             <SongsContent />
         </div>
     );
