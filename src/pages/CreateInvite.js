@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import MainContent from '../components/MainContent';
 import MainContentTemplate from '../components/MainContentTemplate';
 import LayoutTextFields from '../components/LayoutTextFields';
+import { Typography, Button } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -20,6 +21,9 @@ function CreateInvite() {
         <div className={classes.root}>
             <SideMenu name="Create Invite" />
             <MainContentTemplate title="Create Invite" content={<LayoutTextFields />}/>
+            <Button variant="contained" color="backgroundDefault" className={classes.button} href="/SongsPage">
+            Next
+          </Button>
         </div>
     );
 }
