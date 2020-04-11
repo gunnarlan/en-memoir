@@ -21,6 +21,11 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     height: "100%",
   },
+  reducedheight: {
+    width: "100%",
+    height: "80%",
+  },
+
   bigAvatar: {
     margin: 30,
     width: 160,
@@ -40,7 +45,7 @@ function MainContentRSVP() {
   const classes = useStyles();
 
   return (
-    <main className={classes.fullWidth}>
+    <main className={classes.reducedheight}>
     <div>
         Hello
     </div>

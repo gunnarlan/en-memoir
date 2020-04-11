@@ -17,7 +17,6 @@ function RSVPPage() {
     return (
         <div className={classes.root}>
             <HeaderRSVP />
-            <MainContentRSVP />
         </div>
     );
 }
