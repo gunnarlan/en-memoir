@@ -1,5 +1,5 @@
 # En-memoir
-❤️ Welcome to the source code for *En-memoir*! ❤️ We're a team participating in The Global Hackathon April 2020, as a response to the COVID-19 global crisis. Our mission is to 
+❤️ Welcome to the source code for *En-memoir*! ❤️ We're a team participating in The Global Hackathon April 2020. Our mission is to provide a digital platform which allows families to mourn their loved ones together during the COVID-19 crisis.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
