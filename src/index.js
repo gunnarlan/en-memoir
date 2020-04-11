@@ -7,6 +7,10 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import MakeObituary from "./pages/MakeObituary";
 import SongsPage from "./pages/SongsPage";
+import CreateInvite from "./pages/CreateInvite";
+import LoginPage from "./pages/LoginPage";
+import LoginPageRSVP from "./pages/LoginPageRSVP";
+import RSVPPage from "./pages/RSVPPage";
 
 
 const rootElement = document.getElementById("root");
@@ -14,8 +18,12 @@ ReactDOM.render(
   <BrowserRouter>
    <Switch>
     <Route exact path="/" component={LandingPage} />
+    <Route path="/LoginPage" component={LoginPage} />
+    <Route path="/CreateInvite" component={CreateInvite} />
     <Route path="/MakeObituary" component={MakeObituary} />
     <Route path="/SongsPage" component={SongsPage} />
+    <Route path="/LoginPageRSVP" component={LoginPageRSVP} />
+    <Route path="/RSVPPage" component={RSVPPage} />
   </Switch>
   </BrowserRouter>,
   rootElement

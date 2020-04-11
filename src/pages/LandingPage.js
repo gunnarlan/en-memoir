@@ -7,6 +7,7 @@ import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainContent from "../components/MainContent";
 import {Link } from "react-router-dom";
+import { Button,List, ListItemText } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -27,6 +28,13 @@ const useStyles = makeStyles((theme) => ({
   content: {
     width: "439px",
     padding: theme.spacing(0),
+  },
+  divb: {
+    width: "439px",
+    padding: theme.spacing(0),
+    position: "absolute",
+    right: "40px",
+    height: "10px",
   },
   fullWidth: {
     width: "100%",
@@ -51,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     backgroundColor: theme.palette.background.paper,
     justifyContent: "center",
-    alignSelf: "center"
+    alignSelf: "center",
   },
 }));
 
@@ -60,6 +68,14 @@ function LandingPage() {
 
   return (
     <main className={classes.fullWidth}>
+      <div className={classes.divb} style={{position: 'fixed'}}>
+          <Button color="primary" href="/LoginPage">
+          Host A Memorial
+        </Button>
+      <Button color="primary" href="./LoginPageRSVP">
+          Join A Memorial
+        </Button>
+      </div>
       <div className={classes.fullWidthInnerDark}>
         <div className={classes.title}>
           <Typography variant="h4">
@@ -68,9 +84,7 @@ function LandingPage() {
         </div>
         <div className={classes.content}>
           <Typography paragraph color="textSecondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
-            pulvinar lorem felis nec erat
+          Celebrate the life of those who have passed with your family and friends.
           </Typography>
         </div>
       </div>
@@ -80,10 +94,22 @@ function LandingPage() {
         </div>
         <div className={classes.content}>
           <Typography paragraph color="textSecondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
-            pulvinar lorem felis nec erat
+          Celebrate life, alleviate grief, and bring closure to your family through
+           our virtual memorial services.
+           </Typography>
+           <Typography paragraph color="textSecondary">           En Memoir utilizes high speed video conferencing software
+            and personalized curated content to help you and the loved ones
+            of the deceased hold a meaningful service, wherever you are.
           </Typography>
+        </div>
+      </div>
+      <div className={classes.fullWidthInnerLight}>
+        <div className={classes.divb}>
+          <Typography paragraph color="textSecondary">
+          The Virtual Memorial Room lets you set up a virtual obituary
+           of your loved one and it includes interactive features like:
+          </Typography>
+
         </div>
       </div>
       <div className={classes.fullWidthInnerMid}>
@@ -98,25 +124,18 @@ function LandingPage() {
             maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
             pulvinar lorem felis nec erat
           </Typography>
-          <Link to="/MakeObituary"><button>
-          Get Started
-        </button>
-        </Link>
         </div>
       </div>
-      <div className={classes.fullWidthInnerMid}>
+      <div className={classes.fullWidthInnerLight}>
+        <div className={classes.title}>
+          <Typography variant="h4">Playlists</Typography>
+        </div>
         <div className={classes.content}>
-          <Grid container flexGrow={1}>
-            <Grid item xs={12}>
-              <Grid container justify="center" spacing={spacing}>
-                {[0, 1, 2].map((value) => (
-                  <Grid key={value} item>
-                    lol
-                  </Grid>
-                ))}
-              </Grid>
-            </Grid>
-          </Grid>
+          <Typography paragraph color="textSecondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            maximus, nulla ut commodo sagittis, sapien dui mattis dui, non
+            pulvinar lorem felis nec erat
+          </Typography>
         </div>
       </div>
     </main>

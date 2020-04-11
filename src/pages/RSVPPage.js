@@ -1,9 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import TopMenu from '../components/TopMenu';
+import HeaderRSVP from '../components/HeaderRSVP';
 import SideMenu from '../components/SideMenu';
 import Footer from '../components/Footer';
-import MainContent from '../components/MainContent';
+import MainContentRSVP from '../components/MainComponentRSVP';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -11,15 +11,14 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function MakeObituary() {
+function RSVPPage() {
     const classes = useStyles();
     
     return (
         <div className={classes.root}>
-            <SideMenu name="Create Obituary"/>
-            <MainContent />
+            <HeaderRSVP />
         </div>
     );
 }
 
-export default MakeObituary;
+export default RSVPPage;

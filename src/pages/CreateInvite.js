@@ -4,6 +4,8 @@ import TopMenu from '../components/TopMenu';
 import SideMenu from '../components/SideMenu';
 import Footer from '../components/Footer';
 import MainContent from '../components/MainContent';
+import MainContentTemplate from '../components/MainContentTemplate';
+import LayoutTextFields from '../components/LayoutTextFields';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -11,15 +13,15 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-function MakeObituary() {
+function CreateInvite() {
     const classes = useStyles();
-    
+
     return (
         <div className={classes.root}>
-            <SideMenu name="Create Obituary"/>
-            <MainContent />
+            <SideMenu name="Create Invite" />
+            <MainContentTemplate title="Create Invite" content={<LayoutTextFields />}/>
         </div>
     );
 }
 
-export default MakeObituary;
+export default CreateInvite;
