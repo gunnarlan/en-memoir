@@ -1,6 +1,8 @@
 # En-memoir
 ❤️ Welcome to the source code for *En-memoir*! ❤️ We're a team participating in The Global Hackathon April 2020. Our mission is to provide a digital platform which allows families to mourn their loved ones together during the COVID-19 crisis. This repo contains our React frontend code. To check out the backend code, please head over to the [server side repo](https://github.com/mahavir9008/memorian).
 
+An interactive prototype can be found [here](https://www.figma.com/proto/kGsLOrcecroIqfmcA4wgJ4/En-Memoir?node-id=202%3A4851&scaling=scale-down).
+
 ## Running the app
 To be able to run the app locally, you will need to first install `Node.js`. The download page can be found [here](https://nodejs.org/en/download/).
 
